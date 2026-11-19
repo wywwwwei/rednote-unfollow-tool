@@ -4,7 +4,9 @@
 [![Platform](https://img.shields.io/badge/Platform-Console%20%7C%20Bookmark%20%7C%20Extension%20%7C%20Tampermonkey-red.svg)](https://www.rednote.com)
 [![Privacy](https://img.shields.io/badge/Privacy-100%25%20Local-green.svg)](#-安全与隐私承诺)
 
-专为小红书 / Rednote 网页端设计的开源关注列表管理与批量取关工具。**纯前端运行、无需安装 Python 或本地后端服务**，直接在浏览器中复用原生会话与签名，零跨域、零网络中转。
+专为小红书（Xiaohongshu）及海外版 Rednote 网页端设计的开源关注列表管理与批量取消关注工具。支持**批量取关、单向关注清理、互关好友保护置顶、安全限流防风控及全量关注数据导出备份**。**100% 纯前端浏览器本地运行**，无需安装 Python 或本地后端服务，零跨域、零网络中转。
+
+> **Keywords / 关键词**：小红书批量取关, 小红书一键取关, 批量取消关注, 小红书关注列表导出, 清理单向关注, Rednote batch unfollow, Xiaohongshu unfollow script, 油猴脚本, Chrome扩展.
 
 ---
 
