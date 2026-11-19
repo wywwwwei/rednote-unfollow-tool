@@ -5,7 +5,7 @@
 (function() {
     'use strict';
 
-    console.log('[Rednote助手 v3.2] 脚本已加载');
+    console.log('[Rednote助手 v1.0.0] 脚本已加载');
 
     // 1. 动态自适应探测小红书内部 HTTP 客户端
     async function getNativeHttp(maxRetries = 20) {

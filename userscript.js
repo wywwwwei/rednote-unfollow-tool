@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rednote / 小红书关注列表真实拉取与批量多选取关
 // @namespace    https://github.com/wywwwwei/rednote-unfollow-tool
-// @version      3.2.0
+// @version      1.0.0
 // @description  自动全量拉取关注列表（互关置顶、单向倒序），支持一键勾选单向关注、安全限流批量取关、取关记录与全量关注列表导出CSV备份
 // @author       OpenSource
 // @match        https://www.rednote.com/*
@@ -12,7 +12,7 @@
 (function() {
     'use strict';
 
-    console.log('[Rednote助手 v3.2] 脚本已加载');
+    console.log('[Rednote助手 v1.0.0] 脚本已加载');
 
     // 1. 动态自适应探测小红书内部 HTTP 客户端
     async function getNativeHttp(maxRetries = 20) {
