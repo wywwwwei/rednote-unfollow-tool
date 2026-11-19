@@ -19,60 +19,52 @@
 
 ---
 
-## 🚀 使用方式（推荐度排序）
+## 🚀 使用方式
 
-普通用户通常只需要偶尔清理一次关注，推荐优先选用**免安装、用完即走的一次性方案**；如果您经常需要使用，也可以选择常驻扩展或脚本。
+本项目提供以下四种运行方式，操作步骤分别如下：
 
-### 方式一：浏览器控制台 (Console) 一键粘贴（最推荐普通人 / 免安装 ⭐⭐⭐⭐⭐）
+### 方式一：浏览器控制台运行
 
-无需下载安装任何文件，只要在浏览器中直接粘贴运行，用完关闭页面即清理干净：
-
-1. 用电脑浏览器打开并登录 [小红书网页版](https://www.rednote.com/)。
-2. 按快捷键打开开发者控制台：
-   - **Windows 用户**：按键盘上的 `F12`（或右键点击页面任意位置 -> 选择【检查】-> 点击顶部的【控制台 / Console】）。
+1. 在电脑浏览器中打开并登录 [小红书网页版](https://www.rednote.com/) 或 [xiaohongshu.com](https://www.xiaohongshu.com/)。
+2. 打开开发者工具控制台：
+   - **Windows 用户**：按键盘 `F12`（或右键点击页面任意位置 -> 选择【检查】-> 切换到【控制台 / Console】）。
    - **Mac 用户**：按快捷键 `Command + Option + I`（或右键【检查】->【Console】）。
-3. 打开本项目中的 [`userscript.js`](./userscript.js) 文件，复制其中的全部代码。
-4. 回到浏览器控制台，将代码粘贴进去并按下 **回车键 (Enter)**。
-   > 💡 **贴心提示**：如果浏览器首次提示 `Warning: Don't paste code here` 并阻止粘贴，请在控制台手动输入 `allow pasting` 后按回车，即可恢复正常粘贴。
-5. 网页右下角将立刻出现红色的 **【⚡ 关注管理 & 批量取关】** 悬浮球，点击即可呼出面板。
+3. 复制 [`userscript.js`](./userscript.js) 的全部代码。
+4. 粘贴到控制台中并按回车键执行。
+   > 若浏览器提示 `Warning: Don't paste code here` 并拦截粘贴，在控制台输入 `allow pasting` 后按回车即可解除限制。
+5. 页面右下角将出现 **【⚡ 关注管理 & 批量取关】** 悬浮球，点击即可展开管理面板。
 
 ---
 
-### 方式二：浏览器书签点击即用 (Bookmarklet)（免开控制台 / 随时呼出 ⭐⭐⭐⭐⭐）
+### 方式二：浏览器书签运行 (Bookmarklet)
 
-适合不习惯按 F12 调试工具的普通用户，点一下书签栏即可唤起助手：
-
-1. 在浏览器书签栏（按 `Ctrl + Shift + B` 或 `Command + Shift + B` 显示书签栏）空白处右键 -> 点击【添加网页 / 添加书签】。
-2. **名称**填写：`小红书批量取关`。
-3. **网址 (URL)** 填写以下引导代码：
+1. 在浏览器书签栏空白处右键，点击【添加网页】或【添加书签】。
+2. 名称填写：`小红书批量取关`。
+3. 网址 (URL) 填写以下代码：
    ```javascript
    javascript:(function(){const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/gh/wywwwwei/rednote-unfollow-tool@main/userscript.js?t='+Date.now();document.body.appendChild(s);})();
    ```
-4. 保存后，每次在浏览器中打开小红书网页版，直接在书签栏点击一下这个书签，管理面板即可自动加载弹出。
+4. 保存后，在小红书网页端点击该书签即可载入面板。
 
 ---
 
-### 方式三：Chrome / Edge 浏览器解压扩展（长期常驻免复制代码 ⭐⭐⭐⭐）
+### 方式三：Chrome / Edge 扩展程序
 
-如果您需要经常使用，不想每次复制代码：
-
-1. **下载项目**：点击 GitHub 页面右上角绿色按钮 `Code` -> `Download ZIP`，解压到本地。
-2. **打开扩展中心**：
-   - **Chrome 用户**：在地址栏输入 `chrome://extensions/` 并回车。
-   - **Edge 用户**：在地址栏输入 `edge://extensions/` 并回车。
-3. **开启开发者模式**：打开页面上的【开发者模式】开关。
-4. **加载扩展**：点击【加载已解压的扩展程序】，选择项目中的 `extension` 文件夹。
-5. 打开小红书网页版，右下角将永久自动加载悬浮球。
+1. 下载项目仓库文件并解压到本地。
+2. 打开浏览器扩展管理页面：
+   - **Chrome**：访问 `chrome://extensions/`
+   - **Edge**：访问 `edge://extensions/`
+3. 开启页面中的【开发者模式】开关。
+4. 点击【加载已解压的扩展程序】，选择项目中的 `extension` 目录。
+5. 访问小红书网页端，页面右下角将自动加载悬浮球。
 
 ---
 
-### 方式四：Tampermonkey / 脚本猫油猴插件（极客习惯推荐 ⭐⭐⭐）
+### 方式四：用户脚本 (Userscript / 油猴)
 
-如果您电脑上已安装了油猴类插件（Tampermonkey / Violentmonkey / 脚本猫）：
-
-1. 打开油猴扩展管理面板，新建脚本。
-2. 复制本项目中的 [`rednote-unfollow.user.js`](./rednote-unfollow.user.js) 全部内容并保存。
-3. 访问小红书网页端即可自动生效。
+1. 打开浏览器已安装的脚本管理器（如 Tampermonkey、Violentmonkey 或脚本猫）。
+2. 新建脚本，复制本项目中的 [`rednote-unfollow.user.js`](./rednote-unfollow.user.js) 全部内容并保存。
+3. 访问小红书网页端即可自动加载。
 
 ---
 
