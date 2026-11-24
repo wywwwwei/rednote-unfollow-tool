@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Rednote / 小红书关注列表真实拉取与批量多选取关
+// @name         Rednote / 小红书批量取关助手
 // @namespace    https://github.com/wywwwwei/rednote-unfollow-tool
 // @version      1.0.0
 // @description  自动全量拉取关注列表（互关置顶、单向倒序），支持一键勾选单向关注、安全限流批量取关、取关记录与全量关注列表导出CSV备份
@@ -235,7 +235,7 @@
     // 3. 创建悬浮球
     const fab = document.createElement('div');
     fab.id = 'rn-fab';
-    fab.innerHTML = '<span>⚡</span> <span>关注管理 & 批量取关</span>';
+    fab.innerHTML = '<span>⚡</span> <span>批量取关助手</span>';
     document.body.appendChild(fab);
 
     // 4. 创建弹窗界面
@@ -245,7 +245,7 @@
         <div class="rn-container">
             <div class="rn-top">
                 <div style="font-size:16px; font-weight:700; display:flex; align-items:center; gap:8px;">
-                    <span style="color:#ff2442;">🔴</span> Rednote 真实关注列表管理 (互关置顶 / 单向倒序)
+                    <span style="color:#ff2442;">🔴</span> Rednote 批量取关助手 (互关置顶 / 单向倒序)
                 </div>
                 <button id="rn-close" style="border:none;background:none;font-size:24px;cursor:pointer;color:#94a3b8;line-height:1;">&times;</button>
             </div>

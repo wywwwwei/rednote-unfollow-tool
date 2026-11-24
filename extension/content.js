@@ -1,5 +1,5 @@
 /**
- * Rednote 关注管理与多选取关助手 - Chrome/Edge Extension Content Script
+ * Rednote 批量取关助手 - Chrome/Edge Extension Content Script
  * 运行于网页主上下文 (world: MAIN)，直接复用原生网络客户端与会话签名
  */
 (function() {
@@ -228,7 +228,7 @@
     // 3. 创建悬浮球
     const fab = document.createElement('div');
     fab.id = 'rn-fab';
-    fab.innerHTML = '<span>⚡</span> <span>关注管理 & 批量取关</span>';
+    fab.innerHTML = '<span>⚡</span> <span>批量取关助手</span>';
     document.body.appendChild(fab);
 
     // 4. 创建弹窗界面
@@ -238,7 +238,7 @@
         <div class="rn-container">
             <div class="rn-top">
                 <div style="font-size:16px; font-weight:700; display:flex; align-items:center; gap:8px;">
-                    <span style="color:#ff2442;">🔴</span> Rednote 真实关注列表管理 (互关置顶 / 单向倒序)
+                    <span style="color:#ff2442;">🔴</span> Rednote 批量取关助手 (互关置顶 / 单向倒序)
                 </div>
                 <button id="rn-close" style="border:none;background:none;font-size:24px;cursor:pointer;color:#94a3b8;line-height:1;">&times;</button>
             </div>

@@ -1,10 +1,10 @@
-# Rednote / 小红书关注列表管理与批量取关助手
+# Rednote / 小红书批量取关助手
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Console%20%7C%20Bookmark%20%7C%20Extension%20%7C%20Tampermonkey-red.svg)](https://www.rednote.com)
 [![Privacy](https://img.shields.io/badge/Privacy-100%25%20Local-green.svg)](#-安全与隐私承诺)
 
-专为小红书（Xiaohongshu）及海外版 Rednote 网页端设计的开源关注列表管理与批量取消关注工具。支持**批量取关、单向关注清理、互关好友保护置顶、安全限流防风控及全量关注数据导出备份**。**100% 纯前端浏览器本地运行**，无需安装 Python 或本地后端服务，零跨域、零网络中转。
+专为小红书（Xiaohongshu）及海外版 Rednote 网页端设计的开源批量取关与清理工具。支持**批量取关、单向关注清理、互关好友保护置顶、安全限流防风控及全量关注数据导出备份**。**100% 纯前端浏览器本地运行**，无需安装 Python 或本地后端服务，零跨域、零网络中转。
 
 ---
 
@@ -32,7 +32,7 @@
 3. 复制 [`userscript.js`](./userscript.js) 的全部代码。
 4. 粘贴到控制台中并按回车键执行。
    > 若浏览器提示 `Warning: Don't paste code here` 并拦截粘贴，在控制台输入 `allow pasting` 后按回车即可解除限制。
-5. 页面右下角将出现 **【⚡ 关注管理 & 批量取关】** 悬浮球，点击即可展开管理面板。
+5. 页面右下角将出现 **【⚡ 批量取关助手】** 悬浮球，点击即可展开管理面板。
 
 ---
 
