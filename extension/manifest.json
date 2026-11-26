@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Rednote 批量取关助手",
   "version": "1.0.0",
-  "description": "小红书 / Rednote 网页端批量取关工具：互关置顶、单向倒序、一键勾选单向关注、安全限流批量取关与记录备份导出。",
+  "description": "小红书 / Rednote 网页端高效批量取关工具：一键勾选单向关注、智能排除互关好友、安全限流防风控、支持数据备份导出。",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",

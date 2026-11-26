@@ -2,7 +2,7 @@
 // @name         Rednote / 小红书批量取关助手
 // @namespace    https://github.com/wywwwwei/rednote-unfollow-tool
 // @version      1.0.0
-// @description  自动全量拉取关注列表（互关置顶、单向倒序），支持一键勾选单向关注、安全限流批量取关、取关记录与全量关注列表导出CSV备份
+// @description  小红书 / Rednote 网页端高效批量取关工具：一键勾选单向关注、智能排除互关好友、内置安全限流防风控、支持名单备份与操作记录导出
 // @author       OpenSource
 // @match        https://www.rednote.com/*
 // @match        https://www.xiaohongshu.com/*

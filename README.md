@@ -4,7 +4,7 @@
 [![Platform](https://img.shields.io/badge/Platform-Console%20%7C%20Bookmark%20%7C%20Extension%20%7C%20Tampermonkey-red.svg)](https://www.rednote.com)
 [![Privacy](https://img.shields.io/badge/Privacy-100%25%20Local-green.svg)](#-安全与隐私承诺)
 
-专为小红书（Xiaohongshu）及海外版 Rednote 网页端设计的开源批量取关与清理工具。支持**批量取关、单向关注清理、互关好友保护置顶、安全限流防风控及全量关注数据导出备份**。**100% 纯前端浏览器本地运行**，无需安装 Python 或本地后端服务，零跨域、零网络中转。
+专为小红书（Xiaohongshu）及海外版 Rednote 设计的高效批量取关工具。支持**一键勾选单向关注、智能排除互关好友、内置安全限流防风控与数据备份导出**。**100% 纯前端浏览器本地运行**，零配置、零后端依赖，开箱即用。
 
 ---
 
